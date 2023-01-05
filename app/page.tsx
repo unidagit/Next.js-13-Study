@@ -10,8 +10,8 @@ export default function Home() {
 			</Head>
 
 			<main className="wrapper">
-				<h1>Data fetching in Next13</h1>
-				<p>Next.js 13 introduced a new way to fetch and manage data in your application. The API has been simplified to align with React and the Web Platform. This means previous Next.js APIs such as getServerSideProps, getStaticProps, and getInitialProps are not supported in the new app directory. Instead, there is one flexible way to fetch, cache, and revalidate data at the component level.</p>
+				<h1>오늘의 추천메뉴</h1>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum sit, error obcaecati assumenda minima vitae eaque quibusdam officiis nemo quasi dolores sint magni exercitationem at, dolorum expedita nisi dignissimos voluptates!</p>
 			</main>
 		</div>
 	)
