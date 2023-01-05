@@ -1,7 +1,16 @@
-import React from 'react'
+import TeaList from "./teaList"
 
-export default function teaPage() {
+
+export default  function Teapage() {
+
+	
   return (
-    <div>teaPage</div>
+    <div>
+        <p>
+        teaPage  SSR방식으로 데이터를 가져옵니다. 
+        </p>
+        <TeaList/>
+    </div>
+
   )
 }
