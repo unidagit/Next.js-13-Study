@@ -1,9 +1,11 @@
-import React from "react";
 import { use } from "react";
 
 async function getLists() {
-  const { tea } = await import("../../data/data.json");
-  return tea;
+  const result = await fetch("https://rickandmortyapi.com/api/character", {
+    cache: "no-store",
+  });
+  const lists = await result.json();
+  return lists;
 }
 
 function TeaList() {
@@ -12,10 +14,9 @@ function TeaList() {
   return (
     <div>
       <h2>teaList</h2>
-      {teaLists?.map((item: any) => (
+      {teaLists?.results?.map((item: any) => (
         <ul key={item.id}>
-          <li>{item.id}</li>
-          <p>{item.description}</p>
+          <li>{item.name}</li>
         </ul>
       ))}
     </div>
